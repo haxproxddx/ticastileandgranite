@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticas Tile &amp; Granite | Gallery</title>
+  <meta name="description" content="Explore the photo and video gallery of granite countertops, tile installations, and custom stone projects by Ticas Tile &amp; Granite." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="gallery">
+  <header class="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">
+            <img src="assets/icons/logo.png" alt="Ticas Tile &amp; Granite logo" class="logo-img" loading="lazy" />
+          </div>
+          <div class="logo-text">
+            <span class="logo-title" data-i18n="companyName">Ticas Tile &amp; Granite</span>
+            <span class="logo-subtitle" data-i18n="galleryTagline">Project Gallery</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="gallery.html" data-i18n="navGallery" class="active">Gallery</a></li>
+          <li><a href="social.html" data-i18n="navSocial">Social</a></li>
+          <li>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+              <span class="globe-icon">
+                <span class="globe-circle"></span>
+                <span class="globe-lat"></span>
+                <span class="globe-lon"></span>
+              </span>
+              <span id="langLabel">EN</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="page-hero hero--small">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-text" data-animate="fade-up">
+          <h1 class="hero-title" data-i18n="galleryTitle">Project Gallery</h1>
+          <p class="hero-subtitle" data-i18n="gallerySubtitle">
+            Discover our granite countertops, tile installations, and custom stone projects.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="photos-section">
+      <div class="container">
+        <header class="section-header" data-animate="fade-up">
+          <h2 class="section-title" data-i18n="photosSectionTitle">Photos</h2>
+          <p class="section-subtitle" data-i18n="photosSectionSubtitle">
+            A curated look at our recent granite and tile installations.
+          </p>
+        </header>
+
+        <div id="photosGrid" class="gallery-grid" data-animate="fade-up" data-animate-delay="80">
+          <!-- Photos loaded dynamically via JavaScript -->
+        </div>
+
+        <p id="photosEmpty" class="empty-message" hidden data-i18n="photosEmpty">
+          Photo gallery coming soon. Please check back for new project photos.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="videos-section">
+      <div class="container">
+        <header class="section-header" data-animate="fade-up">
+          <h2 class="section-title" data-i18n="videosSectionTitle">Videos</h2>
+          <p class="section-subtitle" data-i18n="videosSectionSubtitle">
+            Short highlights of our installations, finishes, and completed spaces.
+          </p>
+        </header>
+
+        <div id="videosGrid" class="gallery-grid gallery-grid--videos" data-animate="fade-up" data-animate-delay="80">
+          <!-- Videos loaded dynamically via JavaScript -->
+        </div>
+
+        <p id="videosEmpty" class="empty-message" hidden data-i18n="videosEmpty">
+          Video gallery coming soon. Follow us on social media for more behind-the-scenes content.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        ×
+      </button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-mark footer-logo-mark">
+          <img src="assets/icons/logo.png" alt="Ticas Tile &amp; Granite logo" class="logo-img" loading="lazy" />
+        </div>
+        <div>
+          <p class="footer-title" data-i18n="companyName">Ticas Tile &amp; Granite</p>
+          <p class="footer-domain">ticastileandgranite.com</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="social.html" data-i18n="navSocial">Social</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <img src="assets/icons/instagram.png" alt="Instagram" class="icon-img" loading="lazy" />
+        </a>
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <img src="assets/icons/facebook.png" alt="Facebook" class="icon-img" loading="lazy" />
+        </a>
+        <a href="#" class="social-icon" aria-label="TikTok">
+          <img src="assets/icons/tiktok.png" alt="TikTok" class="icon-img" loading="lazy" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Ticas Tile &amp; Granite • ticastileandgranite.com • <a href="tel:+12016002131">+1 (201) 600-2131</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>
+
